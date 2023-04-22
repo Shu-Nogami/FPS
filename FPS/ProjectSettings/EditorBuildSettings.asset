@@ -5,18 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Game Lobby.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -24,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Training Room.unity
     guid: c73a736926a52d840aa3ec498558e5d9
   - enabled: 1
-    path: Assets/Scenes/CPU.unity
+    path: Assets/Scenes/TDM.unity
     guid: 585d058e6eb6b06418139546bce45b59
   m_configObjects: {}
