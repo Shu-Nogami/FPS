@@ -10,7 +10,7 @@ public class PlayerUI : MonoBehaviour
     public TextMeshProUGUI sideA;
     public TextMeshProUGUI sideB;
     public TextMeshProUGUI time;
-    public bool usingmaingun = true;
+    public bool isUsingMainGun = true;
     public GameObject maingun;
     public GameObject subgun;
     public Image sideAgray;
@@ -20,7 +20,7 @@ public class PlayerUI : MonoBehaviour
     void Update()
     {
         //メイン武器とサブ武器の残り弾丸を表示
-        if(usingmaingun == true){
+        if(isUsingMainGun == true){
             ammo.text = maingun.GetComponent<GunStatus>().nowAmmo + " / " + maingun.GetComponent<GunStatus>().maxAmmo;
         }
         else{

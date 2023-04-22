@@ -69,12 +69,12 @@ public class PlayerStatus : MonoBehaviour
         //Rキーが押されたとき
         if(Input.GetKeyDown("r") == true){
             //メイン武器を装備しているとき
-            if(isUsingMainGun == true){
+            if(isUsingMainGun){
                 //メイン武器をリロード
                 i_MainGun.GetComponent<GunStatus>().Reload();
             }
             //サブ武器を装備しているとき
-            else if(isUsingMainGun == false){
+            else{
                 //サブ武器をリロード
                 i_SubGun.GetComponent<GunStatus>().Reload();
             }
@@ -84,7 +84,7 @@ public class PlayerStatus : MonoBehaviour
             //メイン武器をオフにし、サブ武器をオンにする
             isUsingMainGun = false;
             if(isTraining == false){
-                GetComponent<PlayerUI>().usingmaingun = false;
+                GetComponent<PlayerUI>().isUsingMainGun = false;
             }
             i_MainGun.SetActive(false);
             i_SubGun.SetActive(true);
@@ -93,7 +93,7 @@ public class PlayerStatus : MonoBehaviour
             //サブ武器をオフにし、メイン武器をオンにする
             isUsingMainGun = true;
             if(isTraining == false){
-                GetComponent<PlayerUI>().usingmaingun = true;
+                GetComponent<PlayerUI>().isUsingMainGun = true;
             }
             i_SubGun.SetActive(false);
             i_MainGun.SetActive(true);

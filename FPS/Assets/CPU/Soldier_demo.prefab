@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86e59ba9299e6c439e28de88dc4cb2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerbool: 0
-  cpubool: 1
+  isPlayer: 0
+  isCPU: 0
   cpu: {fileID: 3923392692513177596}
   player: {fileID: 0}
   sound: {fileID: 0}
@@ -1369,10 +1369,10 @@ MonoBehaviour:
   - {x: -3.24, y: 2.38, z: 24.01}
   - {x: -35.83, y: 9.82, z: 20.86}
   - {x: 19.5, y: 1.81, z: 28.6}
-  encounter: 0
+  isEncount: 0
   time: 0
   hp: 100
-  textname: {fileID: 856040001165596948}
+  cpuName: {fileID: 856040001165596948}
   canvas: {fileID: 8572342766367629032}
 --- !u!114 &3923392692107724772
 MonoBehaviour:
@@ -1387,13 +1387,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammo: {fileID: 5364247721828524393, guid: 25cc4286f6379fa449b63e5cd970351c, type: 3}
-  cpushotposition: {fileID: 3923392691910957659}
-  maxammo: 31
+  cpuShotPosition: {fileID: 3923392691910957659}
+  maxAmmo: 0
   damage: 21
-  nowammo: 0
-  reloadtime: 1
-  shotrate: 0.07
-  playerbool: 0
+  nowAmmo: 0
+  reloadTime: 0
+  shotRate: 0
+  isPlayer: 0
 --- !u!82 &3923392692513177597
 AudioSource:
   m_ObjectHideFlags: 0

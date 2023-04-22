@@ -275,12 +275,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammo: {fileID: 4666133671063868264, guid: 60315efad43f6bd4bba1e035f3b99735, type: 3}
-  maxammo: 20
+  cpuShotPosition: {fileID: 0}
+  maxAmmo: 31
   damage: 15
-  nowammo: 0
-  reloadtime: 0.7
-  shotrate: 0.06
-  playerbool: 1
+  nowAmmo: 31
+  reloadTime: 1
+  shotRate: 0.1
+  isPlayer: 1
 --- !u!111 &6977294084559341139
 Animation:
   m_ObjectHideFlags: 0
